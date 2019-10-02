@@ -6,7 +6,6 @@
         <div class="col-lg-6 mx-auto">
             <div class="adminForms">
                 <h2 class="title">{{ __('Add Logo') }}</h2>
-
                 <form method="POST" id="form" action="{{ route('logo_submit') }}" enctype="multipart/form-data">
                    <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                     <div class="form-group row ">
