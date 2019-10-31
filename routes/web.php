@@ -22,3 +22,4 @@ Route::get('/charge', 'ChargeController@index')->name('charge');
 Route::post('/charge', 'ChargeController@store')->name('charge');
 Route::get('/login/{social}','Auth\LoginController@socialLogin')->where('social','twitter|facebook|linkedin|google|github|bitbucket');
 Route::get('/login/{social}/callback','Auth\LoginController@handleProviderCallback')->where('social','twitter|facebook|linkedin|google|github|bitbucket');
+Route::get('/users', 'UserController@index');
